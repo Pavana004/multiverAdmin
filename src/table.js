@@ -72,7 +72,7 @@ const Table = () => {
     const handleUpload = async (e) => {
         e.preventDefault();
         try {
-              await axios.post("https://multiverse-ott-platform.herokuapp.com/api/movies", inputs);
+              await axios.post("https://multiverse-ott.onrender.com/api/movies", inputs);
               window.location.reload();
               toast.dark("Data Add Successfully In Database");
 
