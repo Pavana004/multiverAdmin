@@ -72,7 +72,7 @@ const Books = () => {
     const handleUpload = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("https://multiverse-ott-platform.herokuapp.com/api/books", inputs);
+            const res = await axios.post("https://backend-one-tau.vercel.app/api/books", inputs);
             toast.dark("Data Add Successfully In Database");
             console.log(res);
 

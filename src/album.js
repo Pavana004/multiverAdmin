@@ -72,7 +72,7 @@ const Album = () => {
     const handleUpload = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("https://multiverse-ott.onrender.com/api/albums", inputs);
+            const res = await axios.post("https://backend-one-tau.vercel.app/api/albums", inputs);
             toast.dark("Data Add Successfully In Database");
             console.log(res);
 
